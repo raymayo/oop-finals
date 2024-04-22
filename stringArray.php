@@ -13,16 +13,16 @@
     <div id="mainContainer2">
     <h1 id="title-1">String Arrays</h1>
 
+    <div id="arrayContainer">
+
     <div class="bothContainer">
     <h2>Sorting</h2>
     <form id="sortingForm" method="post">
         <label for="numbers">Enter a series of numbers:</label>
         <input type="text" id="numbers" name="numbers" required>
-        <br>
         <button type="submit">Sort</button>
-    </form>
 
-<?php
+        <?php
 if (isset($_POST["numbers"])) {
     $numbers = $_POST["numbers"];
 
@@ -39,32 +39,32 @@ if (isset($_POST["numbers"])) {
     echo "</div>";
 }
 ?>
+    </form>
+
+
 
 </div>
 
     <div class="bothContainer">
     <h2>Merging</h2>
     <form id="mergingForm" method="post">
-        <label for="array1">Enter input 1</label>
-        <input type="text" id="array1" name="array1" required>
-        <br>
-        <label for="array2">Enter input 2</label>
-        <input type="text" id="array2" name="array2" required>
-        <br>
+        <label for="array_input_1">Input 1</label>
+        <input type="text" id="array_input_1" name="array_input_1" required>
+        <label for="array_input_2">Input 2</label>
+        <input type="text" id="array_input_2" name="array_input_2" required>
         <button type="submit">Merge</button>
-    </form>
 
-<?php
-if (isset($_POST["array1"]) && isset($_POST["array2"])) {
-    $array1 = $_POST["array1"];
-    $array2 = $_POST["array2"];
-
-
-    $array1Digits = str_split($array1);
-    $array2Digits = str_split($array2);
+        <?php
+if (isset($_POST["array_input_1"]) && isset($_POST["array_input_2"])) {
+    $array_input_1 = $_POST["array_input_1"];
+    $array_input_2 = $_POST["array_input_2"];
 
 
-    $mergedDigits = array_merge($array1Digits, $array2Digits);
+    $array_input_1Digits = str_split($array_input_1);
+    $array_input_2Digits = str_split($array_input_2);
+
+
+    $mergedDigits = array_merge($array_input_1Digits, $array_input_2Digits);
 
 
     sort($mergedDigits);
@@ -76,8 +76,13 @@ if (isset($_POST["array1"]) && isset($_POST["array2"])) {
 }
 ?>
 
+    </form>
+
+
+
 </div>
-    <a href="./" id="backBtn">Back</a>
+</div>
+    <a href="./" id="backBtn">Go Back</a>
 
 </div>
 

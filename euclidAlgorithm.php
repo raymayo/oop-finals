@@ -43,7 +43,7 @@
             echo "<p id='algoResult'>GCD($number1, $number2) = $result</p>";
         }
         ?>
-        <a href="./" id="backBtn">Back</a>
+        <a href="./" id="backBtn">Go Back</a>
     </div>
 
 </body>

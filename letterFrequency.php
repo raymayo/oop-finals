@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-    <a href="./" id="backBtn">Back</a>
+    <a href="./" id="backBtn">Go Back</a>
     </div>
 
 </body>
