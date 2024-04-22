@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #212121;
+}
+
+
+#linkContainer {
+    display: flex;
+    gap: 1rem;
+    height: 25%;
+    width: 100%;
+    justify-content: space-between;
+
+    * {
+        width: 100%;
+        background-color: #212121;
+        color: #eee;
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 8px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}
+
+#mainContainer {
+    /* border: solid 1px red; */
+    background-color: #fff;
+    margin: auto;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#mainContainer2 {
+    /* border: solid 1px red; */
+    background-color: #fff;
+    margin: auto;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.bothContainer {
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+#titleContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+
+
+    * {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 9rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+
+#coinForm {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+
+    label {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    input {
+        width: 70%;
+        padding: .5rem;
+        font-size: 2rem;
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        background-color: #eee;
+    }
+
+
+
+    button {
+        width: 30%;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#title-1 {
+    font-size: 4rem;
+}
+
+#coinsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    width: 100%;
+    gap: 1rem;
+
+
+    * {
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 8px;
+        background-color: #eee;
+    }
+}
+
+
+
+button {
+    align-items: center;
+    background-color: #212121;
+    color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    border-radius: 8px;
+}
+
+button:hover,
+button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    background-color: #131313;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(255, 255, 255, 0.65);
+    transform: translateY(0);
+}
+
+#amount {
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgb(71, 255, 47);
+}
+
+
+#backBtn {
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: #212121;
+    color: #eee;
+}
+
+
+#gcdForm {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    label {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    input {
+        padding: .5rem;
+        font-size: 1.5rem;
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        background-color: #eee;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+}
+
+#algoResult {
+    font-size: 2rem;
+    font-weight: 500;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: rgb(71, 255, 47);
+}
+
+#freqForm {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    label {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    input {
+        padding: .5rem;
+        font-size: 1.5rem;
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        background-color: #eee;
+    }
+
+    button {
+        padding: .5rem;
+        font-size: 1.5rem;
+
+    }
+}
+
+#freqResult {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    width: 100%;
+    gap: 1rem;
+
+
+    * {
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 8px;
+    }
+}
+
+#sortingForm,
+#mergingForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    label {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    input {
+        padding: .5rem;
+        font-size: 1.5rem;
+        border: solid 1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    button {
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+}
+
+.sortResult {
+    font-size: 1rem;
+    font-weight: 500;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: rgb(71, 255, 47);
+
+}
+
+.sortContainer {
+    display: flex;
+    gap: .5rem;
+}
+
+input {
+    background-color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+    #mainContainer {
+        width: 80%;
+        /* background-color: red; */
+
+    }
+
+    #mainContainer2 {
+        width: 80%;
+        /* background-color: red; */
+
+    }
+
+    #title-1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    input {
+        width: 100% !important;
+        font-size: 1rem !important;
+    }
+
+    button {
+        font-size: 1rem !important;
+    }
+
+    label {
+        font-size: 1.25rem !important;
+    }
+
+    #amount {
+        font-size: 1rem !important;
+        padding: .5rem !important;
+    }
+
+    li {
+        font-size: 1rem !important;
+    }
+
+    #algoResult {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    #backBtn {
+        padding: .5rem;
+        font-size: 1.25rem;
+    }
+
+
+
+    #titleContainer {
+        width: 100%;
+        padding: 2rem;
+
+
+        * {
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    #linkContainer {
+        flex-direction: column;
+    }
+
+    .bothContainer {
+        gap: .5rem;
+    }
+
+}
+
+@media only screen and (max-width: 319px) {
+    * {
+        display: none;
+    }
+}
